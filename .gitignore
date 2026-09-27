@@ -1,0 +1,49 @@
+# Dependencies / build
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Media: never commit raw or rendered media. Track manifests/metadata instead.
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.mxf
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.png
+*.jpg
+*.jpeg
+!docs/**/*.png
+
+# Experiment outputs: keep folder structure and small JSON/MD, ignore bulk
+experiments/**/fixtures/media/
+experiments/**/artifacts/**/renders/
+experiments/**/artifacts/**/mmc-workspace/
+experiments/**/artifacts/**/hf-project/node_modules/
+experiments/**/artifacts/**/cache/
+
+# Tool caches
+.hyperframes/
+.makemyclip/

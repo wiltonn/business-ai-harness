@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "edit-plan.v0.schema.json",
+  "title": "Semantic Edit Plan (v0 draft)",
+  "description": "Provider-independent editorial plan for an interview edit. Source of truth for WHAT happens and WHY. Contains no MakeMyClip ops, HyperFrames HTML, or Resolve details. v0 = deliberately loose; tighten after the first experiment.",
+  "type": "object",
+  "required": ["schema_version", "project", "sources", "segments", "sequence"],
+  "properties": {
+    "schema_version": { "const": "edit-plan.v0" },
+    "plan_id": { "type": "string" },
+    "plan_version": { "type": "integer", "minimum": 1 },
+    "project": {
+      "type": "object",
+      "required": ["project_id", "title"],
+      "properties": {
+        "project_id": { "type": "string" },
+        "title": { "type": "string" },
+        "target_duration_sec": { "type": "number", "minimum": 0 },
+        "style_notes": { "type": "string" },
+        "canvas": {
+          "type": "object",
+          "properties": {
+            "width": { "type": "integer" },
+            "height": { "type": "integer" },
+            "fps": { "type": "number" }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "path"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "path": { "type": "string", "description": "Relative to the run's fixtures dir." },
+          "content_hash": { "type": "string" },
+          "role": { "enum": ["camera_a", "camera_b", "audio", "broll", "other"] },
+          "duration_sec": { "type": "number" },
+          "sync_offset_sec": { "type": "number", "description": "Offset to the project's reference clock (multicam)." }
+        }
+      }
+    },
+    "speakers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["speaker_id"],
+        "properties": {
+          "speaker_id": { "type": "string" },
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "is_interviewer": { "type": "boolean" }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question_id", "text"],
+        "properties": {
+          "question_id": { "type": "string" },
+          "text": { "type": "string" },
+          "topic": { "type": "string" },
+          "source_id": { "type": "string" },
+          "source_start": { "type": "number" },
+          "source_end": { "type": "number" }
+        }
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/segment" }
+    },
+    "decisions": {
+      "type": "array",
+      "description": "Every decision that shaped the plan (also mirrored in the run trace).",
+      "items": { "$ref": "#/$defs/decision" }
+    },
+    "sequence": {
+      "type": "array",
+      "description": "Ordered output timeline in semantic terms. Execution providers compile this.",
+      "items": {
+        "type": "object",
+        "required": ["order", "kind"],
+        "properties": {
+          "order": { "type": "integer", "minimum": 0 },
+          "kind": { "enum": ["segment", "title_card", "gap"] },
+          "segment_id": { "type": "string" },
+          "text": { "type": "string" },
+          "duration_sec": { "type": "number" },
+          "transition_in": { "enum": ["cut", "fade", "dissolve", "fadeblack"] },
+          "transition_sec": { "type": "number" }
+        }
+      }
+    },
+    "timeline_operations": {
+      "type": "array",
+      "description": "OPTIONAL, derived: the provider-specific ops compiled from `sequence` (e.g. MakeMyClip verbs). Recorded for audit; never hand-edited; regenerated from the plan.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "provider": { "type": "string" },
+          "op": { "type": "object" },
+          "derived_from": { "type": "string" }
+        }
+      }
+    },
+    "graphics_requests": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/graphics_request" }
+    },
+    "review_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["flag_id", "target_ref", "reason"],
+        "properties": {
+          "flag_id": { "type": "string" },
+          "target_ref": { "type": "string" },
+          "reason": { "type": "string" },
+          "severity": { "enum": ["info", "warn", "block"] },
+          "resolved_by": { "type": "string" }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/artifact" }
+    }
+  },
+  "$defs": {
+    "segment": {
+      "type": "object",
+      "required": ["segment_id", "source_id", "source_start", "source_end"],
+      "properties": {
+        "segment_id": { "type": "string" },
+        "speaker": { "type": "string" },
+        "question_id": { "type": "string" },
+        "source_id": { "type": "string" },
+        "source_start": { "type": "number", "minimum": 0 },
+        "source_end": { "type": "number", "exclusiveMinimum": 0 },
+        "transcript": { "type": "string" },
+        "decision": { "enum": ["KEEP", "REMOVE", "REVIEW", "UNDECIDED"] },
+        "decision_provider": { "type": "string" },
+        "decision_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "reason": { "type": "string" },
+        "selected_visual_source": { "type": "string", "description": "source_id of the chosen camera angle." },
+        "timeline_order": { "type": ["integer", "null"] },
+        "review_required": { "type": "boolean" }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": ["decision_id", "type", "target_ref", "provider", "output"],
+      "properties": {
+        "decision_id": { "type": "string" },
+        "type": { "type": "string", "description": "e.g. keep_segment.v1" },
+        "target_ref": { "type": "string" },
+        "provider": { "enum": ["rule", "jev", "claude", "human", "other"] },
+        "provider_version": { "type": "string" },
+        "output": {},
+        "confidence": { "type": "number" },
+        "reason": { "type": "string" },
+        "cost_usd": { "type": "number" },
+        "latency_ms": { "type": "number" },
+        "overridden_by": { "type": "string" }
+      }
+    },
+    "graphics_request": {
+      "type": "object",
+      "description": "Semantic graphics INTENT. No provider implementation details allowed here.",
+      "required": ["graphics_request_id", "type", "purpose", "related_segment_id", "required_or_optional", "status"],
+      "properties": {
+        "graphics_request_id": { "type": "string" },
+        "type": { "enum": ["speaker_id", "topic_label", "pull_quote", "data_figure", "chart", "caption", "title", "callout", "other"] },
+        "purpose": { "type": "string", "description": "Why this improves comprehension." },
+        "related_segment_id": { "type": "string" },
+        "start_time": { "type": "number", "description": "Seconds relative to the START OF THE RELATED SEGMENT, not absolute output time." },
+        "duration": { "type": "number" },
+        "content": { "type": "object", "description": "Semantic content, e.g. {name, title} or {label} or {figures:[{value, unit, source_citation}]}." },
+        "style_intent": { "type": "string", "description": "Plain-language style, e.g. 'understated, modern'." },
+        "provider_preference": { "enum": ["none", "any", "makemyclip", "hyperframes", "resolve", "human"] },
+        "required_or_optional": { "enum": ["required", "optional"] },
+        "status": { "enum": ["proposed", "approved", "rejected", "rendered", "composited"] },
+        "artifact_id": { "type": ["string", "null"] }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["artifact_id", "type", "provider", "render_path", "version", "status"],
+      "properties": {
+        "artifact_id": { "type": "string" },
+        "type": { "type": "string" },
+        "provider": { "type": "string" },
+        "source_request_id": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "duration_sec": { "type": "number" },
+        "width": { "type": "integer" },
+        "height": { "type": "integer" },
+        "fps": { "type": "number" },
+        "has_alpha": { "type": "boolean" },
+        "source_files": { "type": "array", "items": { "type": "string" } },
+        "render_path": { "type": "string" },
+        "content_hash": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "status": { "enum": ["pending", "rendered", "verified", "approved", "rejected", "superseded"] }
+      }
+    }
+  }
+}
