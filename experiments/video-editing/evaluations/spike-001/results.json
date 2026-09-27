@@ -1,0 +1,278 @@
+{
+  "run_id": "spike-001",
+  "fixture": "synth-interview-001 (SYNTHETIC)",
+  "plan": {
+    "plan_hash": "8bc900ba684678c7",
+    "structural_hash": "91a27999b4924dd7",
+    "sequence_items": 20,
+    "segments_kept": 19,
+    "expected_duration_sec": 106.2,
+    "warnings": []
+  },
+  "pass1": {
+    "structural_hash": "91a27999b4924dd7",
+    "render_path": "renders/rough-cut.91a27999b4924dd7.mp4",
+    "build_seconds": 11.03,
+    "export_seconds": 336.1,
+    "export_ffmpeg_steps": 39,
+    "clip_map": {
+      "0": "clip_ab07a94c",
+      "1": "clip_63cc3455",
+      "2": "clip_c8cb8afb",
+      "3": "clip_943ccf59",
+      "4": "clip_5cc55194",
+      "5": "clip_ca1edaff",
+      "6": "clip_b3657f59",
+      "7": "clip_be2cc485",
+      "8": "clip_95e425b6",
+      "9": "clip_0c43d985",
+      "10": "clip_08ae6ac8",
+      "11": "clip_4e13046d",
+      "12": "clip_bd904587",
+      "13": "clip_7e0fd6f4",
+      "14": "clip_97f55c3b",
+      "15": "clip_8ae64b58",
+      "16": "clip_e6714bf2",
+      "17": "clip_81526033",
+      "18": "clip_b1ea29a8",
+      "19": "clip_4bf19bc4"
+    },
+    "mmc_doc_check": {
+      "ok": true,
+      "problems": [],
+      "mmc_rev": 2,
+      "clips": 20,
+      "transitions": 1
+    },
+    "cache_hit": true
+  },
+  "rough_cut_verification": {
+    "probe": {
+      "duration_sec": 106.475,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "codec": "h264",
+      "pix_fmt": "yuv420p",
+      "has_alpha": false,
+      "has_audio": true
+    },
+    "duration_expected_sec": 106.2,
+    "duration_error_frames": 8.25,
+    "frames_total": 3194,
+    "frames_expected": 3186,
+    "title_card_frames_without_barcode": 90,
+    "title_card_frames_expected": 90,
+    "provenance": {
+      "segments": 19,
+      "segments_zero_drift": 2,
+      "drift_frames_first": 0,
+      "drift_frames_last": 7,
+      "drift_frames_max_abs": 7,
+      "missing_source_frames": 23,
+      "duplicated_output_frames": 13,
+      "foreign_source_frames": 0
+    },
+    "per_segment": [
+      {
+        "segment_id": "seg_a2_s1",
+        "drift_frames": 0,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a1_s2",
+        "drift_frames": 1,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a1_s3",
+        "drift_frames": 1,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a1_s4",
+        "drift_frames": 2,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a1_s5",
+        "drift_frames": 2,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a2_s2",
+        "drift_frames": 3,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a2_s3",
+        "drift_frames": 3,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a2_s4",
+        "drift_frames": 3,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a3_s1",
+        "drift_frames": 3,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a3_s2",
+        "drift_frames": 4,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a3_s3",
+        "drift_frames": 4,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a3_s4",
+        "drift_frames": 5,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a3_s5",
+        "drift_frames": 5,
+        "missing_frames": 14
+      },
+      {
+        "segment_id": "seg_a4_s1",
+        "drift_frames": 0,
+        "missing_frames": 9
+      },
+      {
+        "segment_id": "seg_a4_s3",
+        "drift_frames": 6,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a4_s4",
+        "drift_frames": 6,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a6_s1",
+        "drift_frames": 6,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a6_s2",
+        "drift_frames": 7,
+        "missing_frames": 0
+      },
+      {
+        "segment_id": "seg_a6_s3",
+        "drift_frames": 7,
+        "missing_frames": 0
+      }
+    ],
+    "window_check_naive": {
+      "segments_checked": 19,
+      "max_abs_start_error_frames": 715,
+      "max_abs_end_error_frames": 8,
+      "segments_exact": 2,
+      "intra_segment_discontinuities": 28
+    },
+    "ssim_first_segment_vs_source_aligned": 0.9815,
+    "ssim_last_segment_vs_source_aligned": 0.94921
+  },
+  "graphics": {
+    "request": "gfx_speaker_dana",
+    "placement": {
+      "graphics_request_id": "gfx_speaker_dana",
+      "out_start": 8.6,
+      "out_end": 13.6,
+      "duration": 5.0
+    },
+    "hf_artifact_v1": {
+      "artifact_id": "art_gfx_speaker_dana_hf_v1",
+      "type": "graphic_overlay",
+      "provider": "hyperframes",
+      "source_request_id": "gfx_speaker_dana",
+      "created_at": "2026-09-27T01:46:20+00:00",
+      "duration_sec": 5.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "has_alpha": true,
+      "pix_fmt": "yuva444p10le",
+      "source_files": [
+        "integrations/hyperframes/templates/lower-third-v1/index.html",
+        "graphics/gfx_speaker_dana.hf.v1/variables.json"
+      ],
+      "render_path": "renders/gfx_speaker_dana.hf.v1.mov",
+      "content_hash": "d41ee06a607b065a1b6367ccadadef5ddb320b66f32abb20a80f2aeea482bf27",
+      "version": 1,
+      "status": "superseded",
+      "provider_version": "0.8.79",
+      "template": "lower-third-v1",
+      "variables": {
+        "name": "Dana Reyes",
+        "title": "Candidate, City Council Ward 3",
+        "accent": "#f5b700"
+      },
+      "render_seconds": 26.93
+    },
+    "routes": {
+      "hyperframes+harness_ffmpeg": {
+        "output": "rough-cut+gfx.harness-ffmpeg.v1.mp4",
+        "composite_seconds": 27.55,
+        "timing": {
+          "visible": true,
+          "onset_frame": 259,
+          "offset_frame": 407,
+          "planned_start_frame": 258,
+          "planned_end_frame": 408,
+          "onset_error_frames": 1,
+          "offset_error_frames": -1,
+          "peak_diff": 55.4,
+          "peak_frame": 269,
+          "frames_to_plateau": 8
+        }
+      },
+      "hyperframes+mmc_overlay": {
+        "output": "rough-cut+gfx.mmc-overlay.v1.mp4",
+        "composite_seconds": 29.78,
+        "timing": {
+          "visible": false,
+          "planned_start_frame": 258,
+          "planned_end_frame": 408,
+          "peak_diff": 5.87
+        }
+      },
+      "mmc_text(drawtext)": {
+        "error": "drawtext Windows path escaping (textfile drive colon)",
+        "detail": "rror initializing filters\\\\r\\n[vost#0:0/libx264 @ 000001ddd0850840] Error initializing a simple filtergraph\\\\r\\nError opening output file D:\\\\JevVideoGen\\\\experiments\\\\video-editing\\\\artifacts\\\\spike-001\\\\mmc-workspace-pass2\\\\add-text-b1d62137.mp4.\\\\r\\nError opening output files: Invalid argument\\n'"
+      }
+    }
+  },
+  "artifact_swap": {
+    "pass1_cache_hit": true,
+    "plan_hash_unchanged": true,
+    "structural_hash": "91a27999b4924dd7",
+    "swap_wall_seconds": 27.93,
+    "hf_render_seconds_v2": 23.8,
+    "timing_v2": {
+      "visible": true,
+      "onset_frame": 259,
+      "offset_frame": 407,
+      "planned_start_frame": 258,
+      "planned_end_frame": 408,
+      "onset_error_frames": 1,
+      "offset_error_frames": -1,
+      "peak_diff": 55.0,
+      "peak_frame": 269,
+      "frames_to_plateau": 8
+    }
+  },
+  "build_path_comparison": {
+    "cli_per_clip_seconds": 124.23,
+    "batched_adapter_seconds": 11.03,
+    "cli_doc_matches_plan": true
+  },
+  "total_wall_seconds": 614.3
+}

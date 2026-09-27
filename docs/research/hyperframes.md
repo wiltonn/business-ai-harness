@@ -227,3 +227,12 @@ not a fork.
 - **Overlay placement timing:** the harness computes it from segment anchors.
 - **Verification of data shown in charts:** only verified figures with a source citation.
 - **Final colour and mix:** Resolve or a human.
+
+## Verified in spike-001 (2026-09-26, Windows)
+
+- `hyperframes@0.8.79` renders a harness-owned parametric template (`integrations/hyperframes/templates/lower-third-v1`,
+  vendored GSAP, `--variables-file --strict-variables`) to **ProRes 4444 `yuva444p10le`**, with exactly
+  150 frames for 5.000s, on Windows. Render time was 24–30s per 5s clip.
+- No skills installed. Telemetry disabled via env. FFmpeg was supplied from the pinned ffmpeg-static
+  6.1.1 build on PATH (the old ffprobe-static 4.0.2 was accepted by `doctor`).
+- The artifact composited by a harness FFmpeg overlay landed within ±1 frame of the plan.

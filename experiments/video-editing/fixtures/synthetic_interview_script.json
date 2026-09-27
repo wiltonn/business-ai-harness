@@ -1,0 +1,52 @@
+{
+  "fixture_id": "synth-interview-001",
+  "note": "SYNTHETIC fixture. Fictional people, fictional ward, fictional numbers. Speech is Windows SAPI TTS. Exists to exercise the execution substrate with exact ground truth, not to evaluate editorial quality.",
+  "speakers": {
+    "interviewer": { "name": "Interviewer", "voice": "Microsoft David Desktop" },
+    "dana": { "name": "Dana Reyes", "role": "Candidate, City Council Ward 3", "voice": "Microsoft Zira Desktop" }
+  },
+  "turns": [
+    { "id": "q1", "speaker": "interviewer", "sentences": ["Thanks for sitting down with us. Can you start by telling us why you decided to run?"] },
+    { "id": "a1", "speaker": "dana", "sentences": [
+      "Um, sure. So, the short version is, sorry, let me start that again.",
+      "I decided to run because I kept going to council meetings and leaving with more questions than answers.",
+      "I've lived in Ward 3 for nineteen years, and I run a small bakery on Elm Street.",
+      "Over the last few years I've watched neighbors struggle with rising costs while the city couldn't explain where the money was going.",
+      "At some point you stop complaining and you step up."
+    ]},
+    { "id": "q2", "speaker": "interviewer", "sentences": ["Property taxes have been a big issue this year. What's your view?"] },
+    { "id": "a2", "speaker": "dana", "sentences": [
+      "We've seen taxes increase while residents are asking where the money is going.",
+      "Our assessment went up again this spring, and nobody on my street could tell you what changed.",
+      "I'm not against paying for good services. I'm against paying more without a clear account of it.",
+      "So my first priority would be a plain-language budget that every household can actually read.",
+      "Uh, the the budget, I mean, the whole thing, it's just, yeah."
+    ]},
+    { "id": "q3", "speaker": "interviewer", "sentences": ["What would you actually change in the first year?"] },
+    { "id": "a3", "speaker": "dana", "sentences": [
+      "Three things.",
+      "First, publish every contract over fifty thousand dollars online, within a week of signing.",
+      "Second, hold two evening budget sessions in the ward, not just one daytime meeting downtown.",
+      "Third, set up a simple tracker for road and sidewalk repairs, so people can see when their request will be handled.",
+      "None of that is expensive. It's mostly about deciding to do it."
+    ]},
+    { "id": "q4", "speaker": "interviewer", "sentences": ["Your opponent says those ideas are nice but unrealistic. How do you respond?"] },
+    { "id": "a4", "speaker": "dana", "sentences": [
+      "I'd say other cities our size already do it.",
+      "Look, I think, I think transparency is, it's important, you know.",
+      "Riverside publishes its contracts, and their council says it actually reduced complaints.",
+      "It's not unrealistic. It's just unfamiliar here."
+    ]},
+    { "id": "q5", "speaker": "interviewer", "sentences": ["And going back to taxes for a moment, anything to add?"] },
+    { "id": "a5", "speaker": "dana", "sentences": [
+      "Just that taxes keep rising and people want to know where the money goes.",
+      "Like I said before, it's about being able to see it."
+    ]},
+    { "id": "q6", "speaker": "interviewer", "sentences": ["Last question. What do you want voters to remember about you?"] },
+    { "id": "a6", "speaker": "dana", "sentences": [
+      "That I'll answer the phone.",
+      "If you call my office, you'll get a person, and you'll get a straight answer, even if it's not the one you wanted.",
+      "That's the job."
+    ]}
+  ]
+}

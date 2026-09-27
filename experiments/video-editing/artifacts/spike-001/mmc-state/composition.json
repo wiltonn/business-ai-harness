@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "rev": 2,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "background": "black",
+  "tracks": [
+    {
+      "id": "v0",
+      "kind": "video",
+      "clips": [
+        {
+          "kind": "media",
+          "id": "clip_ab07a94c",
+          "startSec": 0,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 48.4,
+          "sourceOutSec": 53.5
+        },
+        {
+          "kind": "media",
+          "id": "clip_63cc3455",
+          "startSec": 5.100000000000001,
+          "effects": [],
+          "mediaId": "m_7a2bd2886502",
+          "sourceInSec": 0,
+          "sourceOutSec": 3
+        },
+        {
+          "kind": "media",
+          "id": "clip_c8cb8afb",
+          "startSec": 8.100000000000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 16.233333,
+          "sourceOutSec": 22.733333
+        },
+        {
+          "kind": "media",
+          "id": "clip_943ccf59",
+          "startSec": 14.600000000000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 23.033333,
+          "sourceOutSec": 29.066667
+        },
+        {
+          "kind": "media",
+          "id": "clip_5cc55194",
+          "startSec": 20.633334,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 29.333333,
+          "sourceOutSec": 36.7
+        },
+        {
+          "kind": "media",
+          "id": "clip_ca1edaff",
+          "startSec": 28.000001000000005,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 36.966667,
+          "sourceOutSec": 40.8
+        },
+        {
+          "kind": "media",
+          "id": "clip_b3657f59",
+          "startSec": 31.833334,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 53.766667,
+          "sourceOutSec": 59.9
+        },
+        {
+          "kind": "media",
+          "id": "clip_be2cc485",
+          "startSec": 37.966667,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 60.2,
+          "sourceOutSec": 66.833333
+        },
+        {
+          "kind": "media",
+          "id": "clip_95e425b6",
+          "startSec": 44.599999999999994,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 67.1,
+          "sourceOutSec": 73.3
+        },
+        {
+          "kind": "media",
+          "id": "clip_0c43d985",
+          "startSec": 50.8,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 85.3,
+          "sourceOutSec": 87.233333
+        },
+        {
+          "kind": "media",
+          "id": "clip_08ae6ac8",
+          "startSec": 52.733333,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 87.5,
+          "sourceOutSec": 94.4
+        },
+        {
+          "kind": "media",
+          "id": "clip_4e13046d",
+          "startSec": 59.63333300000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 94.666667,
+          "sourceOutSec": 101.666667
+        },
+        {
+          "kind": "media",
+          "id": "clip_bd904587",
+          "startSec": 66.63333300000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 101.966667,
+          "sourceOutSec": 109.9
+        },
+        {
+          "kind": "media",
+          "id": "clip_7e0fd6f4",
+          "startSec": 74.56666600000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 110.2,
+          "sourceOutSec": 115.466667
+        },
+        {
+          "kind": "media",
+          "id": "clip_97f55c3b",
+          "startSec": 79.83333300000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 123.966667,
+          "sourceOutSec": 127.5
+        },
+        {
+          "kind": "media",
+          "id": "clip_8ae64b58",
+          "startSec": 83.36666600000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 134.433333,
+          "sourceOutSec": 140.866667
+        },
+        {
+          "kind": "media",
+          "id": "clip_e6714bf2",
+          "startSec": 89.80000000000001,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 141.166667,
+          "sourceOutSec": 145.9
+        },
+        {
+          "kind": "media",
+          "id": "clip_81526033",
+          "startSec": 94.53333300000003,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 169.533333,
+          "sourceOutSec": 171.933333
+        },
+        {
+          "kind": "media",
+          "id": "clip_b1ea29a8",
+          "startSec": 96.93333300000003,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 172.2,
+          "sourceOutSec": 180
+        },
+        {
+          "kind": "media",
+          "id": "clip_4bf19bc4",
+          "startSec": 104.73333300000004,
+          "effects": [],
+          "mediaId": "m_1fa6a8c8137a",
+          "sourceInSec": 180.266667,
+          "sourceOutSec": 182.233333
+        }
+      ],
+      "transitions": [
+        {
+          "afterClipId": "clip_7e0fd6f4",
+          "kind": "fade",
+          "durationSec": 0.5
+        }
+      ],
+      "muted": false
+    }
+  ]
+}

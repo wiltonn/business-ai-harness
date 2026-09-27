@@ -40,7 +40,10 @@ Thumbs.db
 # Experiment outputs: keep folder structure and small JSON/MD, ignore bulk
 experiments/**/fixtures/media/
 experiments/**/artifacts/**/renders/
-experiments/**/artifacts/**/mmc-workspace/
+experiments/**/artifacts/**/mmc-workspace*/
+experiments/**/artifacts/**/ws-*/
+experiments/**/artifacts/**/graphics/**/vendor/
+experiments/**/artifacts/**/mmc-build-job.json
 experiments/**/artifacts/**/hf-project/node_modules/
 experiments/**/artifacts/**/cache/
 

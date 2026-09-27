@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "rev": 2,
+  "entries": [
+    {
+      "id": "op_a03bd64a",
+      "tool": "ingest",
+      "args": {
+        "path": "D:\\JevVideoGen\\experiments\\video-editing\\fixtures\\media\\synth-interview-001.mp4"
+      },
+      "result": {
+        "mediaId": "m_1fa6a8c8137a",
+        "ref": {
+          "path": "D:\\JevVideoGen\\experiments\\video-editing\\fixtures\\media\\synth-interview-001.mp4",
+          "durationSec": 183.53,
+          "video": {
+            "codec": "h264",
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "audio": {
+            "codec": "aac",
+            "sampleRate": 48000,
+            "channels": "stereo"
+          }
+        }
+      },
+      "timestamp": "2026-09-27T01:40:12.963Z"
+    },
+    {
+      "id": "op_aa68d86b",
+      "timestamp": "2026-09-27T01:40:13.114Z",
+      "tool": "ingest",
+      "args": {
+        "path": "D:\\JevVideoGen\\experiments\\video-editing\\artifacts\\spike-001\\renders\\title-card.e22b9b504f.mp4"
+      },
+      "result": {
+        "mediaId": "m_7a2bd2886502",
+        "ref": {
+          "path": "D:\\JevVideoGen\\experiments\\video-editing\\artifacts\\spike-001\\renders\\title-card.e22b9b504f.mp4",
+          "durationSec": 3,
+          "video": {
+            "codec": "h264",
+            "width": 1920,
+            "height": 1080,
+            "fps": 30
+          },
+          "audio": {
+            "codec": "aac",
+            "sampleRate": 48000,
+            "channels": "stereo"
+          }
+        }
+      }
+    }
+  ]
+}

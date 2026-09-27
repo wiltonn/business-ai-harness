@@ -1,0 +1,11 @@
+{
+  "name": "harness-provider-tools",
+  "private": true,
+  "description": "Pinned external provider CLIs used by the harness. Consumed as tools, not vendored.",
+  "dependencies": {
+    "@makemyclip/editor": "0.3.0",
+    "ffprobe-static": "3.1.0",
+    "gsap": "3.13.0",
+    "hyperframes": "0.8.79"
+  }
+}

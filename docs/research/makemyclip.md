@@ -171,3 +171,19 @@ escaping, undo/redo, the timeline document itself, the human review UI.
   plan-op ↔ MMC-op mapping in the trace. Read back `timeline show` and assert it matches the plan.
 - Do **not** fork. If limitations 2–4 bite, first try a thin adapter (e.g. harness-owned overlay
   post-pass); upstream a PR only if the fix is general.
+
+## Verified in spike-001 (2026-09-26, Windows)
+
+See `experiments/video-editing/evaluations/spike-001/REPORT.md`. Status of the [verify] items above:
+
+| Item | Verdict |
+|---|---|
+| Limitation 2: quadratic fold / generational loss | **Confirmed.** 60 cuts: 1207s export (fold 1146s) vs 62s one-pass concat of the same segments. First-clip SSIM 0.979 vs 0.9955 |
+| Limitation 3: overlay drops WebM alpha | Not tested; ProRes 4444 used instead |
+| Limitation 4: animated overlay timing | **Confirmed.** Overlay invisible at placement; held last frame shown |
+| NEW: export drifts 0.5 frame per cut, with duplicated frames | Found by barcode verification |
+| NEW: transition after drift truncates real frames | Found (~8 frames in spike-001) |
+| NEW: `add-media` fully decodes the source per call | Found. 124s vs 11s for 20 clips; mitigated with `integrations/makemyclip/adapter.mjs` |
+| NEW: all drawtext paths fail on Windows (drive-colon escaping) | Found. Root cause and fix verified; title cards pre-rendered by the harness |
+
+Upstream drafts (not filed): `docs/research/makemyclip-upstream-issues.md`.

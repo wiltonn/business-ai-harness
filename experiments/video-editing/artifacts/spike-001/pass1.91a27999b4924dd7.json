@@ -1,0 +1,37 @@
+{
+  "structural_hash": "91a27999b4924dd7",
+  "render_path": "renders/rough-cut.91a27999b4924dd7.mp4",
+  "build_seconds": 11.03,
+  "export_seconds": 336.1,
+  "export_ffmpeg_steps": 39,
+  "clip_map": {
+    "0": "clip_ab07a94c",
+    "1": "clip_63cc3455",
+    "2": "clip_c8cb8afb",
+    "3": "clip_943ccf59",
+    "4": "clip_5cc55194",
+    "5": "clip_ca1edaff",
+    "6": "clip_b3657f59",
+    "7": "clip_be2cc485",
+    "8": "clip_95e425b6",
+    "9": "clip_0c43d985",
+    "10": "clip_08ae6ac8",
+    "11": "clip_4e13046d",
+    "12": "clip_bd904587",
+    "13": "clip_7e0fd6f4",
+    "14": "clip_97f55c3b",
+    "15": "clip_8ae64b58",
+    "16": "clip_e6714bf2",
+    "17": "clip_81526033",
+    "18": "clip_b1ea29a8",
+    "19": "clip_4bf19bc4"
+  },
+  "mmc_doc_check": {
+    "ok": true,
+    "problems": [],
+    "mmc_rev": 2,
+    "clips": 20,
+    "transitions": 1
+  },
+  "cache_hit": false
+}

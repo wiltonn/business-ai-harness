@@ -1,4 +1,7 @@
-# Proposed next experiment (awaiting approval)
+# Next experiment
+
+> **Status: spike-001 executed 2026-09-26.** Results: `experiments/video-editing/evaluations/spike-001/REPORT.md`.
+> Ran on a synthetic fixture (no real interview supplied).
 
 ## Open architectural questions (top 5)
 

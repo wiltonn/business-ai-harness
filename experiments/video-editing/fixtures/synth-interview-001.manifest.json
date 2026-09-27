@@ -1,0 +1,23 @@
+{
+  "fixture_id": "synth-interview-001",
+  "synthetic": true,
+  "rights": "Generated locally; no third-party rights.",
+  "path": "media/synth-interview-001.mp4",
+  "sha256": "0ef4944423a8549ff3cb2cc484814d765d44b7a56624fc1658d0aa57a0c83ef5",
+  "duration_sec": 183.53,
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "gop": 60
+  },
+  "barcode": {
+    "x": 40,
+    "y": 36,
+    "size": 48,
+    "stride": 56,
+    "cells": 17
+  },
+  "generator": "scripts/make_synthetic_fixture.py"
+}

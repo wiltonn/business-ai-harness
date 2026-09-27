@@ -1,0 +1,60 @@
+[
+  {
+    "artifact_id": "art_gfx_speaker_dana_hf_v1",
+    "type": "graphic_overlay",
+    "provider": "hyperframes",
+    "source_request_id": "gfx_speaker_dana",
+    "created_at": "2026-09-27T01:46:20+00:00",
+    "duration_sec": 5.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "has_alpha": true,
+    "pix_fmt": "yuva444p10le",
+    "source_files": [
+      "integrations/hyperframes/templates/lower-third-v1/index.html",
+      "graphics/gfx_speaker_dana.hf.v1/variables.json"
+    ],
+    "render_path": "renders/gfx_speaker_dana.hf.v1.mov",
+    "content_hash": "d41ee06a607b065a1b6367ccadadef5ddb320b66f32abb20a80f2aeea482bf27",
+    "version": 1,
+    "status": "superseded",
+    "provider_version": "0.8.79",
+    "template": "lower-third-v1",
+    "variables": {
+      "name": "Dana Reyes",
+      "title": "Candidate, City Council Ward 3",
+      "accent": "#f5b700"
+    },
+    "render_seconds": 26.93
+  },
+  {
+    "artifact_id": "art_gfx_speaker_dana_hf_v2",
+    "type": "graphic_overlay",
+    "provider": "hyperframes",
+    "source_request_id": "gfx_speaker_dana",
+    "created_at": "2026-09-27T01:47:43+00:00",
+    "duration_sec": 5.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "has_alpha": true,
+    "pix_fmt": "yuva444p10le",
+    "source_files": [
+      "integrations/hyperframes/templates/lower-third-v1/index.html",
+      "graphics/gfx_speaker_dana.hf.v2/variables.json"
+    ],
+    "render_path": "renders/gfx_speaker_dana.hf.v2.mov",
+    "content_hash": "21850f27baa8cf4f1f3f5f0869fc38d0500f11bf102d786df7f6ce6e2719485b",
+    "version": 2,
+    "status": "rendered",
+    "provider_version": "0.8.79",
+    "template": "lower-third-v1",
+    "variables": {
+      "name": "Dana Reyes",
+      "title": "Candidate, City Council Ward 3",
+      "accent": "#3aa0ff"
+    },
+    "render_seconds": 23.8
+  }
+]

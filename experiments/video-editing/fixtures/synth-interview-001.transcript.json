@@ -1,0 +1,257 @@
+{
+  "fixture_id": "synth-interview-001",
+  "ground_truth": true,
+  "speakers": {
+    "interviewer": {
+      "name": "Interviewer",
+      "voice": "Microsoft David Desktop"
+    },
+    "dana": {
+      "name": "Dana Reyes",
+      "role": "Candidate, City Council Ward 3",
+      "voice": "Microsoft Zira Desktop"
+    }
+  },
+  "sentences": [
+    {
+      "sentence_id": "q1_s1",
+      "turn_id": "q1",
+      "speaker": "interviewer",
+      "text": "Thanks for sitting down with us. Can you start by telling us why you decided to run?",
+      "start": 1.0,
+      "end": 7.1095
+    },
+    {
+      "sentence_id": "a1_s1",
+      "turn_id": "a1",
+      "speaker": "dana",
+      "text": "Um, sure. So, the short version is, sorry, let me start that again.",
+      "start": 8.5095,
+      "end": 15.759
+    },
+    {
+      "sentence_id": "a1_s2",
+      "turn_id": "a1",
+      "speaker": "dana",
+      "text": "I decided to run because I kept going to council meetings and leaving with more questions than answers.",
+      "start": 16.359,
+      "end": 22.5385
+    },
+    {
+      "sentence_id": "a1_s3",
+      "turn_id": "a1",
+      "speaker": "dana",
+      "text": "I've lived in Ward 3 for nineteen years, and I run a small bakery on Elm Street.",
+      "start": 23.1385,
+      "end": 28.868
+    },
+    {
+      "sentence_id": "a1_s4",
+      "turn_id": "a1",
+      "speaker": "dana",
+      "text": "Over the last few years I've watched neighbors struggle with rising costs while the city couldn't explain where the money was going.",
+      "start": 29.468,
+      "end": 36.4975
+    },
+    {
+      "sentence_id": "a1_s5",
+      "turn_id": "a1",
+      "speaker": "dana",
+      "text": "At some point you stop complaining and you step up.",
+      "start": 37.0975,
+      "end": 40.607
+    },
+    {
+      "sentence_id": "q2_s1",
+      "turn_id": "q2",
+      "speaker": "interviewer",
+      "text": "Property taxes have been a big issue this year. What's your view?",
+      "start": 42.007,
+      "end": 47.1315
+    },
+    {
+      "sentence_id": "a2_s1",
+      "turn_id": "a2",
+      "speaker": "dana",
+      "text": "We've seen taxes increase while residents are asking where the money is going.",
+      "start": 48.5315,
+      "end": 53.286
+    },
+    {
+      "sentence_id": "a2_s2",
+      "turn_id": "a2",
+      "speaker": "dana",
+      "text": "Our assessment went up again this spring, and nobody on my street could tell you what changed.",
+      "start": 53.886,
+      "end": 59.7055
+    },
+    {
+      "sentence_id": "a2_s3",
+      "turn_id": "a2",
+      "speaker": "dana",
+      "text": "I'm not against paying for good services. I'm against paying more without a clear account of it.",
+      "start": 60.3055,
+      "end": 66.62
+    },
+    {
+      "sentence_id": "a2_s4",
+      "turn_id": "a2",
+      "speaker": "dana",
+      "text": "So my first priority would be a plain-language budget that every household can actually read.",
+      "start": 67.22,
+      "end": 73.0845
+    },
+    {
+      "sentence_id": "a2_s5",
+      "turn_id": "a2",
+      "speaker": "dana",
+      "text": "Uh, the the budget, I mean, the whole thing, it's just, yeah.",
+      "start": 73.6845,
+      "end": 79.414
+    },
+    {
+      "sentence_id": "q3_s1",
+      "turn_id": "q3",
+      "speaker": "interviewer",
+      "text": "What would you actually change in the first year?",
+      "start": 80.814,
+      "end": 84.0185
+    },
+    {
+      "sentence_id": "a3_s1",
+      "turn_id": "a3",
+      "speaker": "dana",
+      "text": "Three things.",
+      "start": 85.4185,
+      "end": 87.033
+    },
+    {
+      "sentence_id": "a3_s2",
+      "turn_id": "a3",
+      "speaker": "dana",
+      "text": "First, publish every contract over fifty thousand dollars online, within a week of signing.",
+      "start": 87.633,
+      "end": 94.1975
+    },
+    {
+      "sentence_id": "a3_s3",
+      "turn_id": "a3",
+      "speaker": "dana",
+      "text": "Second, hold two evening budget sessions in the ward, not just one daytime meeting downtown.",
+      "start": 94.7975,
+      "end": 101.472
+    },
+    {
+      "sentence_id": "a3_s4",
+      "turn_id": "a3",
+      "speaker": "dana",
+      "text": "Third, set up a simple tracker for road and sidewalk repairs, so people can see when their request will be handled.",
+      "start": 102.072,
+      "end": 109.7165
+    },
+    {
+      "sentence_id": "a3_s5",
+      "turn_id": "a3",
+      "speaker": "dana",
+      "text": "None of that is expensive. It's mostly about deciding to do it.",
+      "start": 110.3165,
+      "end": 115.256
+    },
+    {
+      "sentence_id": "q4_s1",
+      "turn_id": "q4",
+      "speaker": "interviewer",
+      "text": "Your opponent says those ideas are nice but unrealistic. How do you respond?",
+      "start": 116.656,
+      "end": 122.6955
+    },
+    {
+      "sentence_id": "a4_s1",
+      "turn_id": "a4",
+      "speaker": "dana",
+      "text": "I'd say other cities our size already do it.",
+      "start": 124.0955,
+      "end": 127.305
+    },
+    {
+      "sentence_id": "a4_s2",
+      "turn_id": "a4",
+      "speaker": "dana",
+      "text": "Look, I think, I think transparency is, it's important, you know.",
+      "start": 127.905,
+      "end": 133.9645
+    },
+    {
+      "sentence_id": "a4_s3",
+      "turn_id": "a4",
+      "speaker": "dana",
+      "text": "Riverside publishes its contracts, and their council says it actually reduced complaints.",
+      "start": 134.5645,
+      "end": 140.674
+    },
+    {
+      "sentence_id": "a4_s4",
+      "turn_id": "a4",
+      "speaker": "dana",
+      "text": "It's not unrealistic. It's just unfamiliar here.",
+      "start": 141.274,
+      "end": 145.6835
+    },
+    {
+      "sentence_id": "q5_s1",
+      "turn_id": "q5",
+      "speaker": "interviewer",
+      "text": "And going back to taxes for a moment, anything to add?",
+      "start": 147.0835,
+      "end": 151.358
+    },
+    {
+      "sentence_id": "a5_s1",
+      "turn_id": "a5",
+      "speaker": "dana",
+      "text": "Just that taxes keep rising and people want to know where the money goes.",
+      "start": 152.758,
+      "end": 157.3025
+    },
+    {
+      "sentence_id": "a5_s2",
+      "turn_id": "a5",
+      "speaker": "dana",
+      "text": "Like I said before, it's about being able to see it.",
+      "start": 157.9025,
+      "end": 161.837
+    },
+    {
+      "sentence_id": "q6_s1",
+      "turn_id": "q6",
+      "speaker": "interviewer",
+      "text": "Last question. What do you want voters to remember about you?",
+      "start": 163.237,
+      "end": 168.2415
+    },
+    {
+      "sentence_id": "a6_s1",
+      "turn_id": "a6",
+      "speaker": "dana",
+      "text": "That I'll answer the phone.",
+      "start": 169.6415,
+      "end": 171.721
+    },
+    {
+      "sentence_id": "a6_s2",
+      "turn_id": "a6",
+      "speaker": "dana",
+      "text": "If you call my office, you'll get a person, and you'll get a straight answer, even if it's not the one you wanted.",
+      "start": 172.321,
+      "end": 179.7955
+    },
+    {
+      "sentence_id": "a6_s3",
+      "turn_id": "a6",
+      "speaker": "dana",
+      "text": "That's the job.",
+      "start": 180.3955,
+      "end": 182.03
+    }
+  ]
+}

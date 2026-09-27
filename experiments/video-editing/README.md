@@ -1,6 +1,7 @@
 # Experiment: AI Interview Rough-Cut Harness
 
-Status: **designed, not approved, not implemented.**
+Status: **spike-001 (Plan-to-Pixels execution spike) complete** — see `evaluations/spike-001/REPORT.md`.
+AI decision phases (2–8, 13) not yet implemented.
 
 ## Hypothesis
 

@@ -31,5 +31,17 @@ provider, DaVinci Resolve as *optional* finishing.
 
 ## Status
 
-Bootstrap complete; no experiment implemented. Proposed next step (awaiting approval):
-`docs/research/next-experiment.md`.
+Spike-001 (Plan-to-Pixels execution spike) complete — results in
+`experiments/video-editing/evaluations/spike-001/REPORT.md`.
+
+## Running
+
+```bash
+cd integrations && npm install && cd ..
+python -m venv .venv && .venv/Scripts/pip install jsonschema==4.23.0 pytest==8.3.3
+.venv/Scripts/python -m pytest
+.venv/Scripts/python scripts/make_synthetic_fixture.py   # Windows (uses SAPI TTS)
+.venv/Scripts/python scripts/author_spike_plan.py
+.venv/Scripts/python scripts/run_spike.py --measure-cli-build
+.venv/Scripts/python scripts/mmc_scaling_study.py
+```

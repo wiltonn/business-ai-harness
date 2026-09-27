@@ -1,0 +1,974 @@
+{
+  "schema_version": "edit-plan.v0",
+  "plan_id": "spike-001",
+  "plan_version": 1,
+  "project": {
+    "project_id": "synth-interview-001",
+    "title": "Dana Reyes interview (synthetic)",
+    "style_notes": "Plain rough cut. Cold open on the tax line.",
+    "canvas": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30
+    }
+  },
+  "sources": [
+    {
+      "source_id": "cam_a",
+      "path": "media/synth-interview-001.mp4",
+      "content_hash": "0ef4944423a8549ff3cb2cc484814d765d44b7a56624fc1658d0aa57a0c83ef5",
+      "role": "camera_a",
+      "duration_sec": 183.53
+    }
+  ],
+  "speakers": [
+    {
+      "speaker_id": "interviewer",
+      "name": "Interviewer",
+      "is_interviewer": true
+    },
+    {
+      "speaker_id": "dana",
+      "name": "Dana Reyes",
+      "role": "Candidate, City Council Ward 3",
+      "is_interviewer": false
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "q1",
+      "text": "Thanks for sitting down with us. Can you start by telling us why you decided to run?",
+      "source_id": "cam_a",
+      "source_start": 1.0,
+      "source_end": 7.1095
+    },
+    {
+      "question_id": "q2",
+      "text": "Property taxes have been a big issue this year. What's your view?",
+      "source_id": "cam_a",
+      "source_start": 42.007,
+      "source_end": 47.1315
+    },
+    {
+      "question_id": "q3",
+      "text": "What would you actually change in the first year?",
+      "source_id": "cam_a",
+      "source_start": 80.814,
+      "source_end": 84.0185
+    },
+    {
+      "question_id": "q4",
+      "text": "Your opponent says those ideas are nice but unrealistic. How do you respond?",
+      "source_id": "cam_a",
+      "source_start": 116.656,
+      "source_end": 122.6955
+    },
+    {
+      "question_id": "q5",
+      "text": "And going back to taxes for a moment, anything to add?",
+      "source_id": "cam_a",
+      "source_start": 147.0835,
+      "source_end": 151.358
+    },
+    {
+      "question_id": "q6",
+      "text": "Last question. What do you want voters to remember about you?",
+      "source_id": "cam_a",
+      "source_start": 163.237,
+      "source_end": 168.2415
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "seg_q1_s1",
+      "speaker": "interviewer",
+      "question_id": "q1",
+      "source_id": "cam_a",
+      "source_start": 0.866667,
+      "source_end": 7.3,
+      "transcript": "Thanks for sitting down with us. Can you start by telling us why you decided to run?",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a1_s1",
+      "speaker": "dana",
+      "question_id": "q1",
+      "source_id": "cam_a",
+      "source_start": 8.4,
+      "source_end": 15.966667,
+      "transcript": "Um, sure. So, the short version is, sorry, let me start that again.",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "False start ('sorry, let me start that again').",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a1_s2",
+      "speaker": "dana",
+      "question_id": "q1",
+      "source_id": "cam_a",
+      "source_start": 16.233333,
+      "source_end": 22.733333,
+      "transcript": "I decided to run because I kept going to council meetings and leaving with more questions than answers.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 2,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a1_s3",
+      "speaker": "dana",
+      "question_id": "q1",
+      "source_id": "cam_a",
+      "source_start": 23.033333,
+      "source_end": 29.066667,
+      "transcript": "I've lived in Ward 3 for nineteen years, and I run a small bakery on Elm Street.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 3,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a1_s4",
+      "speaker": "dana",
+      "question_id": "q1",
+      "source_id": "cam_a",
+      "source_start": 29.333333,
+      "source_end": 36.7,
+      "transcript": "Over the last few years I've watched neighbors struggle with rising costs while the city couldn't explain where the money was going.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 4,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a1_s5",
+      "speaker": "dana",
+      "question_id": "q1",
+      "source_id": "cam_a",
+      "source_start": 36.966667,
+      "source_end": 40.8,
+      "transcript": "At some point you stop complaining and you step up.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 5,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_q2_s1",
+      "speaker": "interviewer",
+      "question_id": "q2",
+      "source_id": "cam_a",
+      "source_start": 41.9,
+      "source_end": 47.333333,
+      "transcript": "Property taxes have been a big issue this year. What's your view?",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a2_s1",
+      "speaker": "dana",
+      "question_id": "q2",
+      "source_id": "cam_a",
+      "source_start": 48.4,
+      "source_end": 53.5,
+      "transcript": "We've seen taxes increase while residents are asking where the money is going.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 0,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a2_s2",
+      "speaker": "dana",
+      "question_id": "q2",
+      "source_id": "cam_a",
+      "source_start": 53.766667,
+      "source_end": 59.9,
+      "transcript": "Our assessment went up again this spring, and nobody on my street could tell you what changed.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 6,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a2_s3",
+      "speaker": "dana",
+      "question_id": "q2",
+      "source_id": "cam_a",
+      "source_start": 60.2,
+      "source_end": 66.833333,
+      "transcript": "I'm not against paying for good services. I'm against paying more without a clear account of it.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 7,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a2_s4",
+      "speaker": "dana",
+      "question_id": "q2",
+      "source_id": "cam_a",
+      "source_start": 67.1,
+      "source_end": 73.3,
+      "transcript": "So my first priority would be a plain-language budget that every household can actually read.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 8,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a2_s5",
+      "speaker": "dana",
+      "question_id": "q2",
+      "source_id": "cam_a",
+      "source_start": 73.566667,
+      "source_end": 79.6,
+      "transcript": "Uh, the the budget, I mean, the whole thing, it's just, yeah.",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Filler, no content.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_q3_s1",
+      "speaker": "interviewer",
+      "question_id": "q3",
+      "source_id": "cam_a",
+      "source_start": 80.7,
+      "source_end": 84.233333,
+      "transcript": "What would you actually change in the first year?",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a3_s1",
+      "speaker": "dana",
+      "question_id": "q3",
+      "source_id": "cam_a",
+      "source_start": 85.3,
+      "source_end": 87.233333,
+      "transcript": "Three things.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 9,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a3_s2",
+      "speaker": "dana",
+      "question_id": "q3",
+      "source_id": "cam_a",
+      "source_start": 87.5,
+      "source_end": 94.4,
+      "transcript": "First, publish every contract over fifty thousand dollars online, within a week of signing.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 10,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a3_s3",
+      "speaker": "dana",
+      "question_id": "q3",
+      "source_id": "cam_a",
+      "source_start": 94.666667,
+      "source_end": 101.666667,
+      "transcript": "Second, hold two evening budget sessions in the ward, not just one daytime meeting downtown.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 11,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a3_s4",
+      "speaker": "dana",
+      "question_id": "q3",
+      "source_id": "cam_a",
+      "source_start": 101.966667,
+      "source_end": 109.9,
+      "transcript": "Third, set up a simple tracker for road and sidewalk repairs, so people can see when their request will be handled.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 12,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a3_s5",
+      "speaker": "dana",
+      "question_id": "q3",
+      "source_id": "cam_a",
+      "source_start": 110.2,
+      "source_end": 115.466667,
+      "transcript": "None of that is expensive. It's mostly about deciding to do it.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 13,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_q4_s1",
+      "speaker": "interviewer",
+      "question_id": "q4",
+      "source_id": "cam_a",
+      "source_start": 116.533333,
+      "source_end": 122.9,
+      "transcript": "Your opponent says those ideas are nice but unrealistic. How do you respond?",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a4_s1",
+      "speaker": "dana",
+      "question_id": "q4",
+      "source_id": "cam_a",
+      "source_start": 123.966667,
+      "source_end": 127.5,
+      "transcript": "I'd say other cities our size already do it.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 14,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a4_s2",
+      "speaker": "dana",
+      "question_id": "q4",
+      "source_id": "cam_a",
+      "source_start": 127.8,
+      "source_end": 134.166667,
+      "transcript": "Look, I think, I think transparency is, it's important, you know.",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Filler / stumble; adds nothing to the rebuttal.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a4_s3",
+      "speaker": "dana",
+      "question_id": "q4",
+      "source_id": "cam_a",
+      "source_start": 134.433333,
+      "source_end": 140.866667,
+      "transcript": "Riverside publishes its contracts, and their council says it actually reduced complaints.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 15,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a4_s4",
+      "speaker": "dana",
+      "question_id": "q4",
+      "source_id": "cam_a",
+      "source_start": 141.166667,
+      "source_end": 145.9,
+      "transcript": "It's not unrealistic. It's just unfamiliar here.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 16,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_q5_s1",
+      "speaker": "interviewer",
+      "question_id": "q5",
+      "source_id": "cam_a",
+      "source_start": 146.966667,
+      "source_end": 151.566667,
+      "transcript": "And going back to taxes for a moment, anything to add?",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a5_s1",
+      "speaker": "dana",
+      "question_id": "q5",
+      "source_id": "cam_a",
+      "source_start": 152.633333,
+      "source_end": 157.5,
+      "transcript": "Just that taxes keep rising and people want to know where the money goes.",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Duplicate of a2_s1 (weaker phrasing of the same point).",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a5_s2",
+      "speaker": "dana",
+      "question_id": "q5",
+      "source_id": "cam_a",
+      "source_start": 157.766667,
+      "source_end": 162.033333,
+      "transcript": "Like I said before, it's about being able to see it.",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Refers back to earlier answer; redundant once a5_s1 is removed.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_q6_s1",
+      "speaker": "interviewer",
+      "question_id": "q6",
+      "source_id": "cam_a",
+      "source_start": 163.133333,
+      "source_end": 168.433333,
+      "transcript": "Last question. What do you want voters to remember about you?",
+      "decision": "REMOVE",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": null,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a6_s1",
+      "speaker": "dana",
+      "question_id": "q6",
+      "source_id": "cam_a",
+      "source_start": 169.533333,
+      "source_end": 171.933333,
+      "transcript": "That I'll answer the phone.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 17,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a6_s2",
+      "speaker": "dana",
+      "question_id": "q6",
+      "source_id": "cam_a",
+      "source_start": 172.2,
+      "source_end": 180.0,
+      "transcript": "If you call my office, you'll get a person, and you'll get a straight answer, even if it's not the one you wanted.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 18,
+      "review_required": false
+    },
+    {
+      "segment_id": "seg_a6_s3",
+      "speaker": "dana",
+      "question_id": "q6",
+      "source_id": "cam_a",
+      "source_start": 180.266667,
+      "source_end": 182.233333,
+      "transcript": "That's the job.",
+      "decision": "KEEP",
+      "decision_provider": "human",
+      "decision_confidence": 1.0,
+      "reason": "Substantive, complete thought.",
+      "selected_visual_source": "cam_a",
+      "timeline_order": 19,
+      "review_required": false
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "dec_keep_q1_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_q1_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone."
+    },
+    {
+      "decision_id": "dec_keep_a1_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a1_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "False start ('sorry, let me start that again')."
+    },
+    {
+      "decision_id": "dec_keep_a1_s2",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a1_s2",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a1_s3",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a1_s3",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a1_s4",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a1_s4",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a1_s5",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a1_s5",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_q2_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_q2_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone."
+    },
+    {
+      "decision_id": "dec_keep_a2_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a2_s1",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a2_s2",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a2_s2",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a2_s3",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a2_s3",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a2_s4",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a2_s4",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a2_s5",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a2_s5",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Filler, no content."
+    },
+    {
+      "decision_id": "dec_keep_q3_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_q3_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone."
+    },
+    {
+      "decision_id": "dec_keep_a3_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a3_s1",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a3_s2",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a3_s2",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a3_s3",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a3_s3",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a3_s4",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a3_s4",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a3_s5",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a3_s5",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_q4_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_q4_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone."
+    },
+    {
+      "decision_id": "dec_keep_a4_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a4_s1",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a4_s2",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a4_s2",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Filler / stumble; adds nothing to the rebuttal."
+    },
+    {
+      "decision_id": "dec_keep_a4_s3",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a4_s3",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a4_s4",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a4_s4",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_q5_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_q5_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone."
+    },
+    {
+      "decision_id": "dec_keep_a5_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a5_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Duplicate of a2_s1 (weaker phrasing of the same point)."
+    },
+    {
+      "decision_id": "dec_keep_a5_s2",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a5_s2",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Refers back to earlier answer; redundant once a5_s1 is removed."
+    },
+    {
+      "decision_id": "dec_keep_q6_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_q6_s1",
+      "provider": "human",
+      "output": "REMOVE",
+      "confidence": 1.0,
+      "reason": "Interviewer question; answers stand alone."
+    },
+    {
+      "decision_id": "dec_keep_a6_s1",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a6_s1",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a6_s2",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a6_s2",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_keep_a6_s3",
+      "type": "keep_segment.v1",
+      "target_ref": "seg_a6_s3",
+      "provider": "human",
+      "output": "KEEP",
+      "confidence": 1.0,
+      "reason": "Substantive, complete thought."
+    },
+    {
+      "decision_id": "dec_dup_a5_s1",
+      "type": "duplicate_of.v1",
+      "target_ref": "seg_a5_s1",
+      "provider": "human",
+      "output": {
+        "verdict": "DUPLICATE",
+        "of": "seg_a2_s1",
+        "keep": "seg_a2_s1"
+      },
+      "confidence": 1.0,
+      "reason": "Duplicate of a2_s1 (weaker phrasing of the same point)."
+    }
+  ],
+  "sequence": [
+    {
+      "order": 0,
+      "kind": "segment",
+      "segment_id": "seg_a2_s1"
+    },
+    {
+      "order": 1,
+      "kind": "title_card",
+      "text": "Dana Reyes  -  Ward 3 Council Candidate",
+      "duration_sec": 3.0
+    },
+    {
+      "order": 2,
+      "kind": "segment",
+      "segment_id": "seg_a1_s2"
+    },
+    {
+      "order": 3,
+      "kind": "segment",
+      "segment_id": "seg_a1_s3"
+    },
+    {
+      "order": 4,
+      "kind": "segment",
+      "segment_id": "seg_a1_s4"
+    },
+    {
+      "order": 5,
+      "kind": "segment",
+      "segment_id": "seg_a1_s5"
+    },
+    {
+      "order": 6,
+      "kind": "segment",
+      "segment_id": "seg_a2_s2"
+    },
+    {
+      "order": 7,
+      "kind": "segment",
+      "segment_id": "seg_a2_s3"
+    },
+    {
+      "order": 8,
+      "kind": "segment",
+      "segment_id": "seg_a2_s4"
+    },
+    {
+      "order": 9,
+      "kind": "segment",
+      "segment_id": "seg_a3_s1"
+    },
+    {
+      "order": 10,
+      "kind": "segment",
+      "segment_id": "seg_a3_s2"
+    },
+    {
+      "order": 11,
+      "kind": "segment",
+      "segment_id": "seg_a3_s3"
+    },
+    {
+      "order": 12,
+      "kind": "segment",
+      "segment_id": "seg_a3_s4"
+    },
+    {
+      "order": 13,
+      "kind": "segment",
+      "segment_id": "seg_a3_s5"
+    },
+    {
+      "order": 14,
+      "kind": "segment",
+      "segment_id": "seg_a4_s1",
+      "transition_in": "fade",
+      "transition_sec": 0.5
+    },
+    {
+      "order": 15,
+      "kind": "segment",
+      "segment_id": "seg_a4_s3"
+    },
+    {
+      "order": 16,
+      "kind": "segment",
+      "segment_id": "seg_a4_s4"
+    },
+    {
+      "order": 17,
+      "kind": "segment",
+      "segment_id": "seg_a6_s1"
+    },
+    {
+      "order": 18,
+      "kind": "segment",
+      "segment_id": "seg_a6_s2"
+    },
+    {
+      "order": 19,
+      "kind": "segment",
+      "segment_id": "seg_a6_s3"
+    }
+  ],
+  "graphics_requests": [
+    {
+      "graphics_request_id": "gfx_speaker_dana",
+      "type": "speaker_id",
+      "purpose": "Identify the speaker the first time she appears after the title card.",
+      "related_segment_id": "seg_a1_s2",
+      "start_time": 0.5,
+      "duration": 5.0,
+      "content": {
+        "name": "Dana Reyes",
+        "title": "Candidate, City Council Ward 3"
+      },
+      "style_intent": "Understated, modern, lower-left.",
+      "provider_preference": "any",
+      "required_or_optional": "optional",
+      "status": "approved",
+      "artifact_id": null
+    }
+  ],
+  "review_flags": [],
+  "artifacts": []
+}

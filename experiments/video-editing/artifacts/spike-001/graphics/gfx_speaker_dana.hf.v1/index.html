@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  Harness-owned HyperFrames template: speaker lower-third (transparent overlay).
+  Graphics IMPLEMENTATION lives here; the edit plan only carries the intent
+  (speaker_id: name + title). Variables: name, title, accent.
+  Timing contract: 5.0s total — 0.0–0.6 bar slides in, text in by 0.8,
+  hold, 4.4–5.0 fade out. GSAP is vendored at render time (vendor/gsap.min.js),
+  never loaded from a CDN.
+-->
+<html
+  lang="en"
+  data-composition-variables='[
+    {"id":"name","type":"string","label":"Name","default":"Speaker Name"},
+    {"id":"title","type":"string","label":"Title","default":"Role or title"},
+    {"id":"accent","type":"color","label":"Accent","default":"#f5b700"}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 1920px; height: 1080px; font-family: "Segoe UI", Arial, sans-serif; }
+      #lt { position: absolute; left: 96px; bottom: 150px; display: flex; align-items: stretch; }
+      #accent { width: 10px; background: var(--accent); }
+      #plate { background: rgba(12, 14, 20, 0.86); padding: 18px 34px 20px 26px; }
+      #name { color: #ffffff; font-size: 52px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.1; }
+      #title { color: #d7dbe3; font-size: 32px; font-weight: 400; margin-top: 6px; line-height: 1.2; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="5" data-width="1920" data-height="1080">
+      <div id="lt" class="clip" data-start="0" data-duration="5" data-track-index="0">
+        <div id="accent"></div>
+        <div id="plate">
+          <div id="name" data-var-text="name">Speaker Name</div>
+          <div id="title" data-var-text="title">Role or title</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#lt", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0);
+      tl.fromTo("#name", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 0.2);
+      tl.fromTo("#title", { y: 12, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 0.35);
+      tl.to("#lt", { opacity: 0, duration: 0.6, ease: "power1.in" }, 4.4);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
